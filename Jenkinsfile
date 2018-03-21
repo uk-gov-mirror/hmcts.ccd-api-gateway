@@ -1,7 +1,7 @@
 #!groovy
 
 properties(
-    [[$class: 'GithubProjectProperty', projectUrlStr: 'https://git.reform.hmcts.net/case-management/ccd-api-gateway-web/'],
+    [[$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/hmcts/ccd-api-gateway/'],
      pipelineTriggers([[$class: 'GitHubPushTrigger']])]
 )
 
