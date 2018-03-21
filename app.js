@@ -1,6 +1,6 @@
-const enableAppInsights = require('./app/app-insights/app-insights');
+// const enableAppInsights = require('./app/app-insights/app-insights');
 
-enableAppInsights();
+// enableAppInsights();
 
 let express = require('express');
 let cookieParser = require('cookie-parser');
