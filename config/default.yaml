@@ -7,8 +7,10 @@ proxy:
   case_activity: http://localhost:3460
 idam:
   base_url: http://localhost:4501
-  s2s_url: http://rpe-service-auth-provider-saat.service.core-compute-saat.internal:4502
-  service_key:
+#  s2s_url: http://rpe-service-auth-provider-saat.service.core-compute-saat.internal:4502
+#  service_key:
+  s2s_url: http://localhost:4502
+  service_key: AAAAAAAAAAAAAAAC
   service_name: ccd_gw
   oauth2:
     token_endpoint: http://localhost:4501/oauth2/token
@@ -16,7 +18,8 @@ idam:
     client_id: ccd_gateway
 address_lookup:
   detect_proxy: false
-  url: https://postcodeinfo.service.justice.gov.uk/addresses?postcode=${postcode}
+#  url: https://postcodeinfo.service.justice.gov.uk/addresses?postcode=${postcode}
+  url: https://localhost:9090/addresses?postcode=${postcode}
   token:
 security:
   cors_origin_methods: "GET,POST,OPTIONS"
