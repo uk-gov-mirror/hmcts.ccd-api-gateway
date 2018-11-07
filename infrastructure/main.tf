@@ -109,5 +109,5 @@ module "palo_alto" {
   trusted_vnet_name             = "core-infra-vnet-${var.env}"
   trusted_vnet_resource_group   = "core-infra-${var.env}"
   trusted_vnet_subnet_name      = "palo-trusted"
-  trusted_destination_host      = "${var.ilbIp}"
+  trusted_destination_ip        = "${var.ilbIp}"
 }
