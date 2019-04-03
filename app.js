@@ -102,6 +102,12 @@ applyProxy(app, {
 });
 
 applyProxy(app, {
+  source: '/api',
+  target: config.get('proxy.api'),
+  rewrite: true
+});
+
+applyProxy(app, {
   source: '/payments',
   target: config.get('proxy.payments'),
   filter: [
